@@ -1,7 +1,18 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let plainWord = word.replace(/\W+|_/g, "").toLowerCase();
+  let reversedWord = plainWord.split("").reverse().join("");
+  
+  if (plainWord==reversedWord){
+    return true
+  }
+  else{ 
+    return false; 
+  }
 }
 
+
+//now we have the reversed string stored in the variable rword
 /* 
   Add your pseudocode here
 */
